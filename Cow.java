@@ -45,4 +45,20 @@ public class Cow {
         this.ageMonths = ageMonths;
     }
 
+    public int getTotalAgeInMonths() {
+        return ageYears * 12 + ageMonths;
+    }
+
+    public int calculateMilkProduction() {
+        switch (color) {
+            case "white":
+                return 120 - getTotalAgeInMonths(); // Plain milk
+            case "brown":
+                return 40 - ageYears;               // Chocolate milk
+            case "pink":
+                return 30 - ageMonths;              // Strawberry milk
+            default:
+                return 0;
+        }
+    }
 }
