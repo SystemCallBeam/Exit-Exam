@@ -26,13 +26,13 @@ public class CowControl {
         if (validateCowId(cowId)) {
             Cow cow = model.findCowById(cowId);
             if (cow != null) {
-                int milkProduction = cow.calculateMilkProduction();
-                view.setResultText("Cow ID " + cowId + " produces " + milkProduction + " liters of " + cow.getColor() + " milk.");
+                int milkProduction = cow.calculateMilk();
+                view.setResultText("Cow ID " + cowId + " produces " + milkProduction + " liters of " + cow.getMilk() + " milk.");
             } else {
                 view.setResultText("Cow not found!");
             }
         } else {
-            view.setResultText("Invalid Cow ID!");
+            view.setResultText("Must be 8 digits and not start with 0!");
         }
     }
 
