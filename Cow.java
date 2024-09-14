@@ -12,5 +12,14 @@ public class Cow {
         this.age_years = age_years;
         this.age_months = age_months;
     }
-    
+
+}
+
+/**
+ * Color
+ */
+enum Color {
+    white,
+    brown,
+    pink
 }
