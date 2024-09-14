@@ -1,11 +1,9 @@
 public class Cow {
     private String id;
-    // how to create enum data type?
     private String color;
     private int ageYears;
     private int ageMonths;
 
-    // how to recieve enum parametor?
     Cow(String id, String color, int ageYears, int ageMonths) {
         this.id = id;
         this.color = color;
