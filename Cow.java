@@ -13,6 +13,38 @@ public class Cow {
         this.age_months = age_months;
     }
 
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public int getAge_years() {
+        return age_years;
+    }
+
+    public void setAge_years(int age_years) {
+        this.age_years = age_years;
+    }
+
+    public int getAge_months() {
+        return age_months;
+    }
+
+    public void setAge_months(int age_months) {
+        this.age_months = age_months;
+    }
+
 }
 
 /**
